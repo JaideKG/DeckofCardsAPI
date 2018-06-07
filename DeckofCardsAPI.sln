@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckofCardsAPI", "DeckofCardsAPI\DeckofCardsAPI.csproj", "{D9A601B5-C59C-4619-9AB4-15C2D523532D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{92AC40A9-318D-430A-B77E-6ADC0ED3C39C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9A601B5-C59C-4619-9AB4-15C2D523532D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A601B5-C59C-4619-9AB4-15C2D523532D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A601B5-C59C-4619-9AB4-15C2D523532D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A601B5-C59C-4619-9AB4-15C2D523532D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE92DCAD-4373-44C4-A7F1-24E95F30D2BF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@if (ViewBag.Error != null)
+{
+    <div>
+        <h2>Error: Status @ViewBag.Error</h2>
+        @ViewBag.ErrorDescription
+        <br />
+        @ViewBag.Data
+    </div>
+}
+else
+{
+    <h2>Deck of Cards</h2>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th width="20%">Name of Cards</th>
+            <th width="10%">Image</th>
+            @*<td>@ViewBag.NameofCards</td>
+            <td>@ViewBag.Image</td>*@
+        </tr>
+
+
+
+    @*<table class="table table-bordered table-striped">
+        <tr>
+            <th width="20%">Time</th>
+            <th width="10%">Temp</th>
+            <th width="20%">Forecast</th>
+            <th width="10%">Description</th>
+        </tr>*@
+
+
+
+
+
+        @for (int i = 0; i < ViewBag.Cards.Count; i++)
+        {
+            <tr>
+                @*<td>@ViewBag.Cards[i]suite</td>*@
+                <td>@ViewBag.Cards[i]value</td>
+                <td>
+                    <img src="@ViewBag.Cards[i].image"
+                         height="43" width="43" />
+                </td>
+                @*<td>*@
+                    @*@ViewBag.Descs[i]*@
+                    @*<a href="#" onclick="alert('@ViewBag.Texts[i]')">Show more</a>*@
+                    @*<a href="#" id="link-@i"
+                       onclick="toggleMoreInfo('@i')">More Info</a>
+                    <span id="text-@i" style="display:none">
+                        @ViewBag.Texts[i]
+                    </span>
+                </td>*@
+            </tr>
+        }
+    </table>
+
+}
+
+@*<script>
+    function toggleMoreInfo(fieldNumber) {
+        if (document.getElementById('text-' + fieldNumber).style.display
+            == "none") {
+            document.getElementById('text-' + fieldNumber).style.display = 'block';
+            document.getElementById('link-' + fieldNumber).innerHTML = 'Hide';
+        } else {
+            document.getElementById('text-' + fieldNumber).style.display = 'none';
+            document.getElementById('link-' + fieldNumber).innerHTML = 'Show more';
+        }
+    }
+</script>*@
